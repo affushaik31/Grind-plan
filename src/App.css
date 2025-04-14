@@ -1,0 +1,136 @@
+.container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  
+}
+.child1{
+    display: flex;
+    column-gap:25px;
+    width:70%;
+    height:fit-content;
+    row-gap: 10px;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+#in-box{
+    border: 1px solid ghostwhite;
+    color:rgb(28, 62, 126);
+    outline:none;
+    border-radius: 20px;
+    padding-left:20px;
+    width: 300px;
+    height:45px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#btn{
+    width:fit-content;
+    height:45px;
+    padding:8px;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: #492d6f;;
+    color:rgb(112, 244, 244);
+    outline: none;
+    border:none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.child2{
+    width: 90%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 10px;
+    font-size: 10px;
+    
+}
+.active{
+    border: 1.5px solid rgb(16, 23, 78);
+    color:rgb(16, 33, 78);
+    width:300px;
+    height:fit-content;
+    padding:8px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.finished{
+    border: 1.5px solid rgb(16, 23, 78);
+    color:rgb(16, 33, 78);
+    width:300px;
+    height:fit-content;
+    padding:8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.undo{
+    display: flex;
+    column-gap: 10px;
+    border-radius: 50px;
+   
+  }
+  .undo>li{
+    text-decoration: line-through;
+  }
+  
+  button{
+    cursor: pointer;
+    height:30px;
+    background-color: rgb(218, 140, 201);
+  }
+.tasks{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+  }
+  
+  img{
+    cursor: pointer;
+  }
+  #head{
+    font-size: 50px;
+    color: rgb(16, 23, 78);
+    font-weight: 900;
+    display: inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    letter-spacing: 1px;
+    animation: typing 2s infinite;
+}
+@keyframes typing {
+    from{width:0}
+    to{width:100%}
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    color: rgb(21, 20, 31);
+    
+  }
+  
+  .rendered-tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+ }
+  
